@@ -1,6 +1,22 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="toast">"Toast"</string>
-    <string name="minus">"Minus"</string>
-    <string name="plus">"Plus"</string>
+    <string name="app_name">Calculator</string>
+    <string name="number1">1</string>
+    <string name="number2">2</string>
+    <string name="number3">3</string>
+    <string name="number4">4</string>
+    <string name="number5">5</string>
+    <string name="number6">6</string>
+    <string name="number7">7</string>
+    <string name="number8">8</string>
+    <string name="number9">9</string>
+    <string name="number0">0</string>
+    <string name="multiplication">*</string>
+    <string name="division">/</string>
+    <string name="addition">+</string>
+    <string name="subtraction">-</string>
+    <string name="percent">%</string>
+    <string name="point">.</string>
+    <string name="amount">=</string>
+    <string name="reset">C</string>
+    <string name="delete">DEL</string>
 </resources>

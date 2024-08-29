@@ -5,60 +5,112 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/toast"
-        />
+    android:background="@color/black"
+    android:padding="17dp"
+    android:gravity="bottom">
 
     <TextView
-        android:id="@+id/txtNumber"
+        android:id="@+id/txtFormula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="30sp"
+        android:textAlignment="textEnd"/>
+
+    <TextView
+        android:id="@+id/txtHasil"
         android:text="0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="256dp"
-        android:background="@color/yelow"
-        />
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="80dp"/>
 
-    <LinearLayout
+    <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2"
-        >
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:columnCount="4"
+        android:rowCount="5">
 
         <Button
-            android:id="@id/btnMinus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/minus" />
-
+            android:text="@string/reset"
+            style="@style/otherBtn"
+            android:id="@+id/buttonReset" />
         <Button
-
-            android:id="@id/btnPlus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/plus" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+            android:text="@string/delete"
+            style="@style/otherBtn"
+            android:id="@+id/buttonDelete"
+            android:textSize="30dp"/>
         <Button
-            android:layout_gravity="center|bottom"
-            android:id="@id/btnToast"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="klik disini"
-            />
-    </LinearLayout>
-
-
-
-
+            android:text="@string/percent"
+            style="@style/otherBtn"
+            android:id="@+id/buttonPercent" />
+        <Button
+            android:text="@string/division"
+            style="@style/operatorBtn"
+            android:id="@+id/buttonDivision" />
+        <Button
+            android:text="@string/number7"
+            style="@style/numberBtn"
+            android:id="@+id/button7" />
+        <Button
+            android:text="@string/number8"
+            style="@style/numberBtn"
+            android:id="@+id/button8" />
+        <Button
+            android:text="@string/number9"
+            style="@style/numberBtn"
+            android:id="@+id/button9" />
+        <Button
+            android:text="@string/multiplication"
+            style="@style/operatorBtn"
+            android:id="@+id/buttonMultiplication" />
+        <Button
+            android:text="@string/number4"
+            style="@style/numberBtn"
+            android:id="@+id/button4" />
+        <Button
+            android:text="@string/number5"
+            style="@style/numberBtn"
+            android:id="@+id/button5" />
+        <Button
+            android:text="@string/number6"
+            style="@style/numberBtn"
+            android:id="@+id/button6" />
+        <Button
+            android:text="@string/subtraction"
+            style="@style/operatorBtn"
+            android:id="@+id/buttonSubstraction" />
+        <Button
+            android:text="@string/number1"
+            style="@style/numberBtn"
+            android:id="@+id/button1" />
+        <Button
+            android:text="@string/number2"
+            style="@style/numberBtn"
+            android:id="@+id/button2" />
+        <Button
+            android:text="@string/number3"
+            style="@style/numberBtn"
+            android:id="@+id/button3" />
+        <Button
+            android:text="@string/addition"
+            style="@style/operatorBtn"
+            android:id="@+id/buttonAddition" />
+        <Button
+            android:text="@string/number0"
+            style="@style/numberBtn"
+            android:id="@+id/button0"
+            android:layout_columnSpan="2"/>
+        <Button
+            android:text="@string/point"
+            style="@style/numberBtn"
+            android:id="@+id/buttonPoint" />
+        <Button
+            android:text="@string/amount"
+            style="@style/operatorBtn"
+            android:id="@+id/buttonAmount" />
+    </GridLayout>
 </LinearLayout>
